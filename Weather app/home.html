@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta charset='utf-8'>
+	  <title>weather app</title>
+	   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		      <link
+             rel="stylesheet"
+             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+             crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+ </head>
+
+<body>
+   <div class="container my-5">
+     <h1 class="text-center title">Weather check</h1>
+       <form class="location-search">
+    	  	<input type="text" name="city" placeholder="type a city name" autocomplete="off" class="form-control text-muted form-rounded p=4 shadow-sm" />
+    	 </form>
+   <div  class="bg-img-container">
+      <div class="card rounded my-3 shadow-lg d-none card-back">
+    	  <div class="card-top text-center">
+        	<div class="city-name my-3">
+            <div class="icon-container card">
+              <img src="img/icon.png" alt="" >
+            </div>
+            <p>coimbatore</p>
+            <span>IN</span>
+		      </div>
+        </div>
+   <div class="card-body">
+      <div class="card-middle row">
+          <div class="col-9 temp">
+              <span>31&deg;C</span>
+              <p class="weather-condition">Scattered clouds</p>
+          </div>
+          <div class="col-10 weather-condition-temp">
+               <p class="high"> Max: 31&deg;C</p>
+               <p class="low">Min: 25&deg;C</p>
+               <p class="hum">Humidity : 66%</p>
+               <p class="clouds">Clouds : 40%</p>
+          </div>
+      </div>
+          
+   <div class="card-bottom px-6 py-4 row">
+      <div class="col text-center">
+          <p>35%</p>
+          <span>feels like</span>
+      </div>
+      <div class="col text-center">
+           <p>5.66kmph</p>
+           <span>wind speed</span>
+      </div>
+      <div class="col text-center">
+            <p>1008</p>
+            <span>pressure</span>
+      </div>
+      </div>
+   </div>
+  </div>
+</div>
+    <script src="req.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
